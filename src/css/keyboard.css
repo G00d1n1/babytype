@@ -1,0 +1,31 @@
+.keyboard {color: #fff;}
+.keyboard_line{display: flex; max-width: 620px; }
+.line-item {
+  display: flex; justify-content: center; align-items: center; 
+  min-width: 40px; height: 40px; 
+  background-color: lightgray; border: 1px solid black; 
+  box-shadow: inset 2px 2px 2px white, inset -2px -2px 2px black;
+  color:grey;
+  position: relative;
+  cursor: default;}
+.line-item.activeAqua {height: 40px; background-color: aqua;}
+.line-itemTech {width:-webkit-fill-available; background-color: darkgray; color: black; font-weight: 700; font-size: 12px; padding: 0 6px;}
+.line-space {min-width: 272px;}
+
+
+
+.redialEffect {animation: aniEffect .5s linear; }
+@keyframes aniEffect {
+  /* 50%{background: radial-gradient(red, red)}
+  100%{background: radial-gradient(red, lightgray)} */
+
+  0%{transform: rotate(0deg);  -webkit-transform-origin: right center; }
+  20%{transform: rotate(180deg); -webkit-transform-origin: right center; }
+  
+  21%{transform: rotate(180deg);  -webkit-transform-origin: right center; }
+  50%{transform: rotate(360deg);  -webkit-transform-origin: right center; }
+  
+  100%{transform: rotate(360deg);  -webkit-transform-origin: right center; }
+};
+
+
